@@ -13,6 +13,8 @@ public class Calculadora {
 		System.out.println("0) Sair");
 		System.out.println("1) Soma");
 		System.out.println("2) Subtração");
+		System.out.println("3) Multiplicação");
+		System.out.println("4) Divisão");
 		int opcao = scanner.nextInt();
 		
 		int valor1, valor2;
@@ -39,6 +41,26 @@ public class Calculadora {
         	    valor2 = scanner.nextInt();
         	    
         	    System.out.println(valor1 + " - " + valor2 + " = " + (valor1 - valor2));
+        	    
+                break;
+	        case 3:
+	            System.out.println("Insira o primeiro valor da multiplicação");
+        	    valor1 = scanner.nextInt();
+        	    
+        	    System.out.println("Insira o segundo valor da multiplicação");
+        	    valor2 = scanner.nextInt();
+        	    
+        	    System.out.println(valor1 + " x " + valor2 + " = " + (valor1 * valor2));
+        	    
+                break;
+	        case 4:
+	            System.out.println("Insira o primeiro valor da divisão");
+        	    valor1 = scanner.nextInt();
+        	    
+        	    System.out.println("Insira o segundo valor da divisão");
+        	    valor2 = scanner.nextInt();
+        	    
+        	    System.out.println(valor1 + " / " + valor2 + " = " + (valor1 /valor2));
         	    
                 break;
             default:
